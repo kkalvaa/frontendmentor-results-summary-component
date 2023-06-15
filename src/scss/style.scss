@@ -1,0 +1,36 @@
+@use 'sass:meta';
+
+@layer resets, settings, elements, objects, components, trumps, themes, junk;
+
+@layer resets {
+  @include meta.load-css('../../node_modules/normalize.css/normalize.css');
+}
+
+@layer settings {
+  :root {
+    font-family: 'Avenir', sans-serif;
+    font-size: 18px;
+    color: hsl(224, 30%, 27%);
+
+    --light-red: 0, 100%, 67%;
+    --orangey-yellow: 39, 100%, 56%;
+    --green-teal: 166, 100%, 37%;
+    --cobalt-blue: 234, 85%, 45%;
+  }
+}
+
+@layer elements {
+  @import 'elements/headers';
+  @import 'elements/main';
+}
+
+@layer components {
+  @import 'components/button';
+  @import 'components/report-card';
+  @import 'components/score';
+  @import 'components/score-circle';
+}
+
+@layer junk {
+  @import 'junk';
+}

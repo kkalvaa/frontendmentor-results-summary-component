@@ -1,0 +1,16 @@
+.c-score-circle {
+  aspect-ratio: 1 / 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3em;
+  background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  border-radius: 100%;
+
+  &__score {
+    font-size: 5em;
+    font-weight: bolder;
+  }
+}

@@ -1,0 +1,15 @@
+.c-btn {
+  border: 0;
+  padding: 1em 5em;
+  border-radius: 100px;
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  transition: background-image ease-out 200ms;
+
+  &:hover,
+  &:focus-within {
+    background-color: hsl(241, 81%, 54%);
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    cursor: pointer;
+  }
+}

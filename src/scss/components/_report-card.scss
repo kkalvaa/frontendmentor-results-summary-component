@@ -1,0 +1,35 @@
+$width: 700px;
+
+.c-report-card {
+  border-radius: 20px;
+  box-shadow: 1px 5px 20px 5px hsla(241, 100%, 89%, 0.25);
+  max-width: $width;
+  display: grid;
+  @media (min-width: $width) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__section {
+    border-radius: 20px;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    &--result {
+      background-color: hsl(252, 100%, 67%);
+      color: white;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      @media (max-width: $width) {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+    }
+
+    &--summary {
+    }
+  }
+}

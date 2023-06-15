@@ -1,0 +1,52 @@
+.c-score {
+  --score-color: var(--light-red);
+  display: grid;
+  grid-template-columns: 1em 1fr auto;
+  gap: 1em;
+  align-items: center;
+  min-width: 250px;
+
+  background-color: hsla(var(--score-color), 0.05);
+  border-radius: 10px;
+
+  padding: 1em;
+
+  &__image {
+    aspect-ratio: 1 / 1;
+    height: 1.2em;
+    transform: translateY(-1px);
+  }
+
+  &__category,
+  &__value {
+    margin: 0;
+  }
+
+  &__category {
+    color: hsl(var(--score-color));
+  }
+
+  &__value {
+    justify-self: end;
+  }
+
+  &__ref {
+    opacity: 0.5;
+  }
+
+  &.is-reaction {
+    --score-color: var(--light-red);
+  }
+
+  &.is-memory {
+    --score-color: var(--orangey-yellow);
+  }
+
+  &.is-verbal {
+    --score-color: var(--green-teal);
+  }
+
+  &.is-visual {
+    --score-color: var(--cobalt-blue);
+  }
+}
